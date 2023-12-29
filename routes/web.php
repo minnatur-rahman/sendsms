@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SMSController;
 use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,4 +22,6 @@ Route::get('/', function () {
 
 
 
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/sms', [SMSController::class, 'index']);
 Route::get('/profile',[WebController::class, 'index']);
