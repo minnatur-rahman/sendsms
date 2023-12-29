@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Modernize Free</title>
+  <title>@yield('page-title') - {{config('app.name', 'Sendsms')}}</title>
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
 </head>
@@ -37,6 +37,7 @@
   <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
   <script src="../assets/js/dashboard.js"></script>
+  @yield('footer-script')
 </body>
 
 </html>
