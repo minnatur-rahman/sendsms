@@ -1,6 +1,6 @@
 @extends('layout.mastar')
 
-
+@section('page-title', 'Dashboard')
 
 
 @section('content')
